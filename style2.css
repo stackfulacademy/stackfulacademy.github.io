@@ -17,9 +17,10 @@ body{
     background:rgba(255, 191, 71, 0.842);
 }
 .sidebar{
-    font-size: xx-large;
-    padding:10px;
+    font-size:xx-large;
+    padding:8px;
     border-radius:8px;
+    font-weight:500;
     background: transparent;
 }
 .sidebar:hover{
