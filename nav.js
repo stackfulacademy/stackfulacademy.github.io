@@ -1,14 +1,28 @@
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+// define all UI variable
+const navToggler = document.querySelector('.nav-toggler');
+const navMenu = document.querySelector('.site-navbar ul');
+const navLinks = document.querySelectorAll('.site-navbar a');
 
-hamburger.addEventListener('click', ()=>{
-   //Animate Links
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-        link.classList.toggle("fade");
-    });
+// load all event listners
+allEventListners();
 
-    //Hamburger Animation
-    hamburger.classList.toggle("toggle");
-});
+// functions of all event listners
+function allEventListners() {
+  // toggler icon click event
+  navToggler.addEventListener('click', togglerClick);
+  // nav links click event
+  navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
+}
+
+// togglerClick function
+function togglerClick() {
+  navToggler.classList.toggle('toggler-open');
+  navMenu.classList.toggle('open');
+}
+
+// navLinkClick function
+function navLinkClick() {
+  if(navMenu.classList.contains('open')) {
+    navToggler.click();
+  }
+}
