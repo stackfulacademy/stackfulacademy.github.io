@@ -309,3 +309,37 @@ nav{
     width: 45%;
     vertical-align: top;
 }
+.middleSection{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: -76px;
+}
+
+.box{
+    background-color: rgb(71,28,71);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.bookbutton{
+    background-color: rgb(223, 45, 74);
+    border-radius: 5px;
+    width: 600px;
+    height: 26px;
+    text-align: center;
+    padding: 4px;
+    margin-top: 106px;
+    margin-left: 16px;
+}
+.linktag{
+    text-decoration:none;
+    color: white;
+}
+
+.bookbutton:hover{
+    opacity: 0.8;
+    transition-duration: 0.6s;
+}
